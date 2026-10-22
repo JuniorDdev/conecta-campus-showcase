@@ -26,7 +26,8 @@
         <a href="#telas">Telas</a>
         <a href="#recursos">Recursos</a>
         <a href="#como-funciona">Como funciona</a>
-        <a href="#tecnologia">Tecnologia</a>
+        <a href="#plataformas">Web + APK</a>
+        <a href="#acessibilidade">Acessibilidade</a>
         <a class="nav-cta" href="https://github.com/JuniorDdev/conecta-campus" target="_blank" rel="noreferrer">Código principal <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -41,6 +42,11 @@
           <p class="eyebrow"><span></span> Acolhimento acadêmico em um só lugar</p>
           <h1>Chegar é só o começo.<br><em>A gente mostra o caminho.</em></h1>
           <p class="hero-lead">O Conecta Campus transforma orientações dispersas em uma jornada clara: informações por perfil, trilhas, mapa, assistente e escuta da comunidade.</p>
+          <div class="hero-platforms" aria-label="Plataformas e acessibilidade">
+            <span><i aria-hidden="true">◫</i> Web responsiva</span>
+            <span><i aria-hidden="true">▯</i> APK Android</span>
+            <span><i aria-hidden="true">◉</i> Libras + VLibras</span>
+          </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#telas">Explorar as telas <span aria-hidden="true">↓</span></a>
             <a class="button button-secondary" href="#como-funciona">Entender o fluxo</a>
@@ -94,6 +100,16 @@
             <span class="screen-image"><img src="assets/screenshots/mapa.png" alt="Mapa interno demonstrativo do Conecta Campus" loading="lazy"></span>
             <span class="screen-open" aria-hidden="true">↗</span>
           </button>
+          <button class="screen-card reveal" type="button" data-delay="80" data-lightbox="assets/screenshots/assistente.png" data-caption="Assistente Campus — texto, voz, fontes e acesso ao módulo de Libras">
+            <span class="screen-meta"><b>Assistente Campus</b><small>Orientação contextual por texto e voz</small></span>
+            <span class="screen-image"><img src="assets/screenshots/assistente.png" alt="Assistente Campus aberto sobre o portal" loading="lazy"></span>
+            <span class="screen-open" aria-hidden="true">↗</span>
+          </button>
+          <button class="screen-card screen-card-wide reveal" type="button" data-delay="120" data-lightbox="assets/screenshots/acessibilidade-libras.png" data-caption="Acessibilidade — reconhecimento visual experimental de sinais isolados e VLibras nas rotas públicas">
+            <span class="screen-meta"><b>Libras e VLibras</b><small>Acessibilidade com limites apresentados de forma transparente</small></span>
+            <span class="screen-image"><img src="assets/screenshots/acessibilidade-libras.png" alt="Módulo experimental de reconhecimento visual de Libras" loading="lazy"></span>
+            <span class="screen-open" aria-hidden="true">↗</span>
+          </button>
           <button class="screen-card screen-card-wide reveal" type="button" data-lightbox="assets/screenshots/pesquisa.png" data-caption="Pesquisa anônima — escuta estruturada da comunidade">
             <span class="screen-meta"><b>Pesquisa anônima</b><small>Escuta e validação</small></span>
             <span class="screen-image"><img src="assets/screenshots/pesquisa.png" alt="Pesquisa anônima do Conecta Campus" loading="lazy"></span>
@@ -116,6 +132,8 @@
           <article class="feature-card reveal"><span class="feature-number">04</span><div class="feature-icon">✦</div><h3>Assistente Campus</h3><p>Recuperação documental SQLite FTS5, fontes e Groq opcional com fallback local.</p></article>
           <article class="feature-card reveal" data-delay="50"><span class="feature-number">05</span><div class="feature-icon">◇</div><h3>Participação</h3><p>Sugestões, avaliações por setor e pesquisa anônima de validação.</p></article>
           <article class="feature-card reveal" data-delay="100"><span class="feature-number">06</span><div class="feature-icon">▥</div><h3>Gestão por dados</h3><p>Dashboard autenticado com filtros, indicadores e exportações CSV, XLSX e PDF.</p></article>
+          <article class="feature-card reveal"><span class="feature-number">07</span><div class="feature-icon">◉</div><h3>Acessibilidade</h3><p>VLibras nas rotas públicas, entrada por voz e protótipo visual de sinais isolados.</p></article>
+          <article class="feature-card reveal" data-delay="50"><span class="feature-number">08</span><div class="feature-icon">▯</div><h3>Web + Android</h3><p>Interface responsiva e APK Flutter/WebView conectado às mesmas rotas públicas.</p></article>
         </div>
       </div>
     </section>
@@ -134,6 +152,52 @@
           <li class="reveal" data-delay="100"><span>03</span><div><small>PARTICIPAÇÃO</small><h3>Escuta voluntária</h3><p>Sugestões, avaliações e pesquisa anônima registram a experiência da comunidade.</p></div></li>
           <li class="reveal" data-delay="150"><span>04</span><div><small>ACOMPANHAMENTO</small><h3>Visão administrativa</h3><p>Dados agregados alimentam filtros, indicadores, status e relatórios exportáveis.</p></div></li>
         </ol>
+      </div>
+    </section>
+
+    <section class="platform-section section" id="plataformas">
+      <div class="shell platform-grid">
+        <div class="platform-copy reveal">
+          <p class="eyebrow"><span></span> Dupla plataforma</p>
+          <h2>Uma experiência.<br><em>Web e Android.</em></h2>
+          <p>O portal funciona diretamente no navegador e também é reunido em um APK Android construído com Flutter. O aplicativo usa WebView para carregar as rotas públicas hospedadas e mantém a navegação dentro da experiência Conecta Campus.</p>
+          <div class="platform-details">
+            <div><span>WEB</span><strong>Responsiva</strong><small>Computador, tablet e celular</small></div>
+            <div><span>APK</span><strong>Flutter + WebView</strong><small>Android 5.0 ou superior</small></div>
+          </div>
+          <p class="platform-note">O APK depende do backend publicado em HTTPS; ele não mantém uma base de dados separada.</p>
+        </div>
+        <div class="platform-visual reveal" data-delay="100" aria-label="Conecta Campus no navegador e no Android">
+          <div class="platform-browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span>experiência web</span></div>
+            <img src="assets/screenshots/mapa.png" alt="Mapa do Conecta Campus em navegador web" loading="lazy">
+          </div>
+          <div class="platform-phone">
+            <div class="phone-speaker"></div>
+            <img src="assets/screenshots/android.png" alt="Experiência móvel do Conecta Campus usada no APK Android" loading="lazy">
+            <span>APK Android</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="access-section section" id="acessibilidade">
+      <div class="shell access-grid">
+        <div class="access-visual reveal">
+          <img src="assets/screenshots/acessibilidade-libras.png" alt="Tela do reconhecimento visual experimental de Libras" loading="lazy">
+          <span class="access-badge">Processamento no dispositivo</span>
+        </div>
+        <div class="access-copy reveal" data-delay="100">
+          <p class="eyebrow"><span></span> Acessibilidade em camadas</p>
+          <h2>Texto, voz, Libras e orientação visual.</h2>
+          <p>O Conecta Campus combina recursos complementares para ampliar o acesso às informações, sempre apresentando com clareza o que é oficial e o que ainda é experimental.</p>
+          <ul class="access-list">
+            <li><span>01</span><div><strong>VLibras nas rotas públicas</strong><small>Avatar para tradução dos textos da página.</small></div></li>
+            <li><span>02</span><div><strong>Voz em português</strong><small>Ditado de perguntas com revisão antes do envio.</small></div></li>
+            <li><span>03</span><div><strong>Sinais isolados</strong><small>Protótipo visual calibrado no próprio dispositivo.</small></div></li>
+          </ul>
+          <div class="access-warning"><b>Limite importante</b><span>O protótipo não traduz Libras contínua e não substitui intérprete. Nenhum vídeo é enviado ou armazenado pelo sistema.</span></div>
+        </div>
       </div>
     </section>
 
@@ -169,7 +233,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div><a class="brand brand-footer" href="#inicio"><span class="brand-mark">C</span><span><strong>Conecta</strong> Campus</span></a><p>Acolhimento, orientação e pertencimento desde o primeiro dia.</p></div>
-      <div><strong>Explore</strong><a href="#telas">Telas</a><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a></div>
+      <div><strong>Explore</strong><a href="#telas">Telas</a><a href="#recursos">Recursos</a><a href="#plataformas">Web + APK</a><a href="#acessibilidade">Acessibilidade</a></div>
       <div><strong>Projeto</strong><a href="https://github.com/JuniorDdev/conecta-campus" target="_blank" rel="noreferrer">Repositório principal ↗</a><span>MVP acadêmico independente</span></div>
     </div>
     <div class="shell footer-bottom"><span>© 2026 Conecta Campus</span><span>Showcase público · dados demonstrativos</span></div>

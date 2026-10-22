@@ -38,6 +38,14 @@ A base exibida no MVP é demonstrativa. Informações que dependem de uma instit
 |---|---|
 | ![Mapa interno do Conecta Campus](docs/assets/screenshots/mapa.png) | ![Pesquisa de validação do Conecta Campus](docs/assets/screenshots/pesquisa.png) |
 
+| Assistente Campus | Acessibilidade experimental em Libras |
+|---|---|
+| ![Assistente Campus aberto no portal](docs/assets/screenshots/assistente.png) | ![Módulo experimental de reconhecimento visual de Libras](docs/assets/screenshots/acessibilidade-libras.png) |
+
+| Experiência móvel usada pelo APK Android |
+|---|
+| ![Rota pública do Conecta Campus em formato móvel](docs/assets/screenshots/android.png) |
+
 ## Principais funcionalidades
 
 - portal responsivo com orientações por perfil;
@@ -49,10 +57,30 @@ A base exibida no MVP é demonstrativa. Informações que dependem de uma instit
 - entrada do assistente por texto e voz em português;
 - protótipo experimental de reconhecimento de sinais isolados, com processamento no navegador;
 - widget VLibras nas rotas públicas;
+- experiência pública responsiva disponível na web e reunida em um aplicativo Android Flutter/WebView;
 - envio de sugestões e avaliações por setor;
 - pesquisa anônima de validação com 14 questões;
 - painel administrativo com autenticação, filtros, indicadores e exportações CSV, XLSX e PDF;
 - aplicativo Android em Flutter que reúne as rotas públicas do sistema hospedado.
+
+## Web + APK Android
+
+O Conecta Campus opera em duas formas de acesso conectadas ao mesmo backend:
+
+- **Web responsiva:** acesso pelo navegador em computador, tablet ou celular;
+- **APK Android:** aplicativo Flutter que incorpora as rotas públicas hospedadas por meio de WebView, preserva a navegação interna e oferece acesso ao assistente, ditado por voz e reconhecimento visual experimental de Libras.
+
+O APK não duplica o backend nem mantém uma base de dados independente. Ele depende da URL HTTPS configurada durante a compilação.
+
+## Acessibilidade e Libras
+
+- widget oficial **VLibras** nas rotas públicas para tradução do texto da página por avatar;
+- captura de voz em português no Assistente Campus;
+- módulo experimental de reconhecimento visual de **sinais isolados**, executado no navegador;
+- calibração de cinco exemplos por frase armazenada somente no `localStorage` do dispositivo;
+- vídeo da câmera não é enviado nem armazenado pelo Conecta Campus.
+
+O reconhecimento visual não traduz Libras contínua, deve ser calibrado com apoio de alguém que conheça Libras e não substitui intérprete.
 
 ## Perfis de acesso
 
@@ -123,5 +151,8 @@ conecta-campus-showcase/
             ├── portal.png
             ├── instrucoes.png
             ├── mapa.png
-            └── pesquisa.png
+            ├── pesquisa.png
+            ├── assistente.png
+            ├── acessibilidade-libras.png
+            └── android.png
 ```
