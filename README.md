@@ -1,6 +1,8 @@
-# Conecta Campus
+# 🧭 Conecta Campus
 
 **Plataforma de acolhimento, orientação e escuta para a comunidade acadêmica.**
+
+🏆 **1º lugar no Inova CEUMA 2026.**
 
 O Conecta Campus reúne, em uma experiência web e Android, orientações para quem está chegando, trilhas de instrução, mapa interno demonstrativo, assistente de dúvidas, participação comunitária e indicadores administrativos.
 
@@ -110,10 +112,11 @@ O portal público não exige identificação pessoal. A área administrativa exi
 
 O Conecta Campus é um projeto acadêmico independente desenvolvido pela equipe do tema **“Manual do Calouro e do Professor Ingressante”**.
 
-1. **Domingos Junior e Geovane Paixão** — desenvolvimento do sistema;
-2. **Saulo José** — coautoria, desenvolvimento das ideias e revisão;
-3. **Cecília Fernanda** — idealização e criação do tema “Manual do Calouro e do Professor Ingressante”;
-4. **Toda a equipe** — responsável pelo projeto Conecta Campus.
+1. **Cecília Fernanda** — idealização do tema “Manual do Calouro e do Professor Ingressante”;
+2. **Domingos Júnior e Geovane Paixão** — desenvolvimento do sistema Conecta Campus;
+3. **Saulo José** — novas ideias para o sistema, desenvolvimento do slide e revisão.
+
+O projeto Conecta Campus é uma realização coletiva da equipe, com as responsabilidades individuais descritas acima.
 
 Os créditos não caracterizam o Conecta Campus como sistema oficial de qualquer instituição de ensino.
 
