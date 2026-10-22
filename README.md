@@ -114,7 +114,7 @@ O Conecta Campus é um projeto acadêmico independente desenvolvido pela equipe 
 
 1. **Cecília Fernanda** — idealização do tema “Manual do Calouro e do Professor Ingressante”;
 2. **Domingos Júnior e Geovane Paixão** — desenvolvimento do sistema Conecta Campus;
-3. **Saulo José** — novas ideias para o sistema, desenvolvimento do slide e revisão.
+3. **Saulo José** — refinamento de ideias para o slide e o sistema, além da revisão.
 
 O projeto Conecta Campus é uma realização coletiva da equipe, com as responsabilidades individuais descritas acima.
 
